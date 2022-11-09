@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+
+<button id="year-button-2017" onmouseenter="hoverYear(2017)" onmouseleave="leaveYear()" onclick="clickYear(2017)">2017</button>
+<button id="year-button-2018" onmouseenter="hoverYear(2018)" onmouseleave="leaveYear()" onclick="clickYear(2018)">2018</button>
+<button id="year-button-2019" onmouseenter="hoverYear(2019)" onmouseleave="leaveYear()" onclick="clickYear(2019)">2019</button>
+<button id="year-button-2020" onmouseenter="hoverYear(2020)" onmouseleave="leaveYear()"  onclick="clickYear(2020)">2020</button>
+
+
+
+
+
+<script>
+var currentActive = 'year-button-2017';
+
+
+
+function hoverYear(year){
+    for(var i=2017; i<=2022; i++){
+        if(i==year){
+            document.getElementById('year-button-'+i).style.color="white";
+        }else{
+            document.getElementById('year-button-'+i).style.color="black";
+        }
+    }
+}
+
+
+
+function clickYear(year){
+    currentActive = 'year-button-'+year;    
+}
+
+
+
+function leaveYear(){
+
+
+
+   document.getElementById('year-button-2020').style.color="black";
+    document.getElementById('year-button-2019').style.color="black";
+    document.getElementById('year-button-2018').style.color="black";
+    document.getElementById('year-button-2017').style.color="black";
+    
+      document.getElementById(currentActive).style.color="white";
+}
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
