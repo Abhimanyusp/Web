@@ -1,0 +1,14 @@
+// <script>
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     const logo = document.getElementById("hide_svg");
+
+//     window.addEventListener("scroll", function() {
+//         if (window.scrollY > 300) {
+//              logo.style.display = "none";
+//         } else {
+//             logo.style.display = "block";
+//         }
+//     });
+// });
+// </script>
