@@ -1,0 +1,24 @@
+popup
+
+<div class="contactttt"><a href= "#cnt">
+  <img width=100 src="http://www.alendedesign.com/wp-content/uploads/2022/11/alendeAsset-9cnttt.png"></a>
+</div>
+<script>
+    jQuery( document ).ready( function( $ ) {
+	$( document ).on( 'click', '.home2', function( event ) {
+		elementorProFrontend.modules.popup.closePopup( {}, event );
+	} );
+} );
+
+jQuery( document ).ready( function( $ ) {
+	$( document ).on( 'click', '.projects', function( event ) {
+		elementorProFrontend.modules.popup.closePopup( {}, event );
+	} );
+} );
+
+jQuery( document ).ready( function( $ ) {
+	$( document ).on( 'click', '.contactttt', function( event ) {
+		elementorProFrontend.modules.popup.closePopup( {}, event );
+	} );
+} );
+</script>
